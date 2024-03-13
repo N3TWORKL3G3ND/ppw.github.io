@@ -98,12 +98,73 @@ main {
     font-weight: bold;
 }
 
+
+
+/*Estilizacion de la info de contacto*/
+#contacto {
+    text-align: left; /* Alinea todo el contenido a la izquierda */
+    padding: 50px 20px; /* Añade espacio alrededor del formulario */
+}
+
+#contacto h2 {
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+}
+
+#contacto form {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 0; /* Elimina el margen para que el formulario esté pegado al borde izquierdo */
+    padding: 20px; /* Espaciado interior del formulario */
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    border-radius: 8px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
+}
+
+#contacto label {
+    display: block; /* Hace que las etiquetas se muestren en una línea */
+    margin-bottom: 5px; /* Espacio entre etiquetas y campos de entrada */
+    font-weight: bold; /* Hace que las etiquetas sean más visibles */
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 100%; /* Ancho completo del campo de entrada */
+    padding: 10px; /* Espaciado interior del campo de entrada */
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 4px; /* Bordes redondeados del campo de entrada */
+    box-sizing: border-box; /* Mantiene el tamaño total del campo de entrada incluyendo el relleno y el borde */
+}
+
+#contacto textarea {
+    height: 100px; /* Altura del área de texto */
+}
+
+#contacto button[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    border: none; /* Sin borde alrededor del botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    font-weight: bold; /* Texto en negrita */
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+
+
+
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
     width: 100%;
 }
