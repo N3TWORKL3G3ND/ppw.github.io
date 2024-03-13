@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    height: 121px; /* Altura del logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Color de fondo del encabezado */
+}
+
+.logo {
+    float: left; /* Alinea el logo a la izquierda */
+    padding: 10px;
+}
+
+
+nav {
+    float: right; /* Alinea el menú a la derecha */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    font-size: 19px; /* Tamaño del texto */
+    font-weight: bold; /* Letra en negrita */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    border-bottom: 2px solid transparent; /* Línea inferior transparente */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Cambia el color del texto al pasar el mouse */
+    border-color: #ddd; /* Muestra la línea inferior al pasar el mouse */
+}
+
+main {
+    margin-top: 70px; /* Ajusta según la altura de la barra de navegación */
+    /* Agrega estilos adicionales según sea necesario */
+}
+
+.portada {
+    background-image: url('img/portada.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    height: 100vh; /* Establece la altura al 100% del viewport (ventana visible) */
+    display: flex; /* Utilizamos flexbox para centrar verticalmente el texto */
+    justify-content: center; /* Centra horizontalmente el texto */
+    align-items: center; /* Centra verticalmente el texto */
+    text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+    color: white; /* Color del texto */
+}
+
+.texto-portada {
+    max-width: 80%; /* Limita el ancho del contenedor de texto para que no sea demasiado ancho en pantallas grandes */
+}
+
+.texto-portada h1 {
+    font-size: 2.5em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.texto-portada p {
+    font-size: 1.5em; /* Tamaño de fuente para el párrafo */
+    margin-bottom: 0; /* Elimina el espacio en la parte inferior del párrafo */
+}
+
+.section {
+    padding: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    margin-bottom: 5px;
+}
+
+.menu-item span {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
